@@ -23,15 +23,7 @@ conn.on('connect', () => {
   //   clearInterval(interval); }, 3000);
 
   
-    // setTimeout( () => {
-    //   conn.write("Move: right");
-    //   }, 5000);
-    //setTimeout( () => {
-    //     conn.write("Move: right");
-    //     }, 7000);
-    //setTimeout( () => {
-    //       conn.write("Move: down");
-    //       }, 9000);
+conn.write("Say: hey y'all!");
 
 
 })

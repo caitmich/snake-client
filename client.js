@@ -15,23 +15,23 @@ conn.on('connect', () => {
 
   conn.write("Name: CMH");
 
-  const interval = setInterval( () => {
-    conn.write("Move: up");
-    }, 50);
+  // const interval = setInterval( () => {
+  //   conn.write("Move: up");
+  //   }, 50);
   
-  setTimeout(() => {
-    clearInterval(interval); }, 3000);
+  // setTimeout(() => {
+  //   clearInterval(interval); }, 3000);
 
   
-    // setTimeout( () => {
-    //   conn.write("Move: right");
-    //   }, 5000);
-    //   setTimeout( () => {
-    //     conn.write("Move: right");
-    //     }, 7000);
-    //     setTimeout( () => {
-    //       conn.write("Move: down");
-    //       }, 9000);
+    setTimeout( () => {
+      conn.write("Move: right");
+      }, 5000);
+      setTimeout( () => {
+        conn.write("Move: right");
+        }, 7000);
+        setTimeout( () => {
+          conn.write("Move: down");
+          }, 9000);
 
 
 })
